@@ -25,6 +25,7 @@ public class Bal {
         Scanner scanner = new Scanner(System.in);
         System.out.println("urakaza neza kuri System Ya Basketbool Africa League");
         Bal league =new Bal();
+        while(true){
         System.out.println("hitamo amahitamo yawe:\n 1:Kwinjizamo Ikipe \n 2:Kwinjiza Umukinnyi \n 3:Gukina \n 4:Gusoza irushanwa \n 5: Umukinnyi witwaye Neza \n 6:Exit");
         int choice=scanner.nextInt();
         switch(choice) {
@@ -50,10 +51,11 @@ public class Bal {
             break;
         
         default:
-        
+        System.exit(0);
+            break;
          
         }
-        
+        }
     }
     public void finishGame(){
         System.out.println("Izina ryikipe"+"\t"+"Amanota");
